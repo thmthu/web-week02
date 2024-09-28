@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #55b9f7;
+  --primary-color-dark: #3480c8;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #317986;
+  --extra-light: #edf8ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  margin-right: 8rem;
+  font-weight: 900;
+}
+nav .logo a {
+  color: var(--primary-color);
+  transition: 0.3s;
+  font-size: 2rem;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+/* tại sao để nav .ul thì nó ra khác */
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+  right: 0;
+}
+.section_container {
+  min-height: 100vh;
+
+  background-color: var(--extra-light);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  place-items: center;
+}
+.content {
+  margin-left: 6rem;
+}
+.welcome {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+.title span {
+  color: var(--primary-color-dark);
+  font-weight: 600;
+}
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+.image {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
