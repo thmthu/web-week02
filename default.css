@@ -33,8 +33,10 @@ body {
   font-weight: 900;
 }
 nav .logo a {
-  color: var(--primary-color);
   transition: 0.3s;
+  background: linear-gradient(45deg, #499eff, #ffcefd, #35bcff);
+  background-clip: text;
+  color: transparent;
   font-size: 2rem;
 }
 nav .logo a:hover {
@@ -49,6 +51,10 @@ ul {
   transition: left 0.3s;
   right: 0;
 }
+ul li a {
+  color: var(--primary-color);
+  margin-left: 6rem;
+}
 .section_container {
   min-height: 100vh;
 
@@ -62,10 +68,13 @@ ul {
   margin-left: 6rem;
 }
 .welcome {
-  letter-spacing: 2px;
-  color: var(--text-light);
+  letter-spacing: 3px;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #ffbff1, #00a4e0, #35bcff);
+  background-clip: text;
+  color: transparent;
 }
 .title {
   font-size: 2.5rem;
@@ -75,8 +84,12 @@ ul {
   margin-bottom: 1rem;
 }
 .title span {
-  color: var(--primary-color-dark);
+  /* color: var(--primary-color-dark); */
   font-weight: 600;
+  background: linear-gradient(45deg, #ffbff1, #74daff, #35bcff);
+  background-clip: text;
+  color: transparent;
+  transition: 0.3s ease-in-out;
 }
 .description {
   line-height: 1.5rem;
@@ -84,6 +97,61 @@ ul {
   margin-bottom: 2rem;
 }
 .image {
-  width: min(25rem, 90%);
+  width: min(30rem, 90%);
   border-radius: 100%;
+  justify-self: center; /* Canh giữa theo chiều ngang */
+  align-self: center; /* Canh giữa theo chiều dọc */
+}
+.profile-container {
+  display: flex;
+  gap: 2 rem;
+  justify-content: center; /* Canh giữa theo chiều dọc */
+}
+h2 {
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 1rem;
+  background: linear-gradient(45deg, #ffbff1, #00a4e0, #35bcff);
+  background-clip: text;
+  color: transparent;
+  margin-left: 40%;
+}
+.item {
+  background-color: #eefbff;
+  border-radius: 10%;
+  width: 25%;
+  margin: 2rem;
+  align-items: center; /* Canh giữa theo chiều ngang */
+  justify-content: center; /* Canh giữa theo chiều dọc */
+  text-align: center;
+  padding: 2rem;
+}
+.item img {
+  width: min(7rem, 90%);
+  border-radius: 100%;
+  justify-self: center; /* Canh giữa theo chiều ngang */
+  align-self: center;
+}
+.description-detail {
+  margin-top: 1rem;
+  text-align: justify;
+  color: #6390ba;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+.name {
+  letter-spacing: 3px;
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(45deg, #67b8ff, #ffc8f6, #35bcff);
+  background-clip: text;
+  color: transparent;
+}
+.nickname {
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(51, 132, 134);
 }
