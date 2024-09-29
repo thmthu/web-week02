@@ -94,7 +94,7 @@ ul li a {
 .description {
   line-height: 1.5rem;
   color: var(--text-light);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .image {
   width: min(30rem, 90%);
